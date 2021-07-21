@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="1200">
+    <meta name="description" content="농심켈로그(주) | Kellogg Korea">
+    <meta name="description" content="농심켈로그 공식 홈페이지 - 브랜드 및 제품, 시리얼과 영양, 사회공헌, 회사 소개 등 정보 제공">
+    <title>농심켈로그(주) | Kellogg Korea</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=1">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css?v=<?php echo time(); ?>">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css?v=<?php echo time(); ?>" />
+</head>
+<body>
+    <div id="skipNavi">
+        <!-- <a href="#gnb">주메뉴바로가기</a> -->
+        <a href="#container">본문바로가기</a>
+    </div>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_inner">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="켈로그"></a></h1>
+                <nav class="gnb">
+                    <ul class="depth1">
+                        <li>
+                            <a href="brand_story.html">Brand &amp; Products</a>
+                            <ul class="depth2">
+                                <li><a href="brand_story.html">회사소개</a></li>
+                                <li><a href="brand_story.html">회사연혁</a></li>
+                                <li><a href="brand_story.html">켈로그의 가치</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="menu.html">Cereal &amp; Nutrition</a>
+                            <ul class="depth2">
+                                <li><a href="menu.html">시리얼</a></li>
+                                <li><a href="menu.html">프로틴</a></li>
+                                <li><a href="menu.html">그레놀라</a></li>
+                                <li><a href="menu.html">켈로그바</a></li>
+                                <li><a href="menu.html">곡물이야기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="event.html">Better Days</a>
+                            <ul class="depth2">
+                                <li><a href="event.html">더 나은 캠페인</a></li>
+                                <li><a href="event.html">건강한 땅,건강한 쌀</a></li>
+                                <li><a href="event.html">고그린 친환경 캠페인</a></li>
+                                <li><a href="event.html">더 시리얼 캠페인</a></li>
+                                <li><a href="event.html">사회공헌 보고서</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="store_search.html">About Kellogg's</a>
+                            <ul class="depth2">
+                                <li><a href="store_search.html">Kellogg’s
+                                        Online Shop</a></li>
+                                <li><a href="store_search.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="util">
+                    <button type="button" class="btn_toggle">검색모달열기</button>
+                    <div class="total_search" style="display: none;">
+                        <div class="search_inner">
+                            <div class="top_search clearfix">
+                                <div class="custom_select">
+                                    <!-- ul이 셀렉태크, li가 옵션 테그로 -->
+                                    <ul class="list_select">
+                                        <li class="init"><a href="#">시리얼 전체</a></li>
+                                        <li class="selected"><a href="#">클래식시리얼</a></li>
+                                        <li><a href="#" >초코시리얼</a></li>
+                                        <li><a href="#" >그래놀라</a>
+                                        </li>
+                                        <li><a href="#" >프로틴</a></li>
+                                        <li><a href="#" >곡물이야기</a></li>
+                                    </ul>
+                                </div>
+                                <input id="inc_schKey" type="text" value="검색어">
+                                <a class="btn_clear" href="#"
+                                    onclick="$('#inc_schKey').val('').focus(); $(this).hide();">입력항목 지우기</a>
+                                <a class="btn_search" href="#"><img src="images/btn_search.png" alt="검색버튼"></a>
+                            </div>
+                            <div class="bottom_search">
+                                <dl class="keyword">
+                                    <dt>
+                                    </dt>
+                                    <dt>오늘의 키워드</dt>
+                                    <dd>
+                                        <a class="point" href="#">선물</a>
+                                        <a href="#">New</a>
+                                        <a href="#">쉐이크</a>
+                                        <a href="#">아침간식</a>
+                                        <a href="#">다이어트</a>
+                                    </dd>
+
+                                </dl>
+                                <dl>
+                                    <dt>
+                                    </dt>
+                                    <dt>이벤트</dt>
+                                    <dd>
+                                        <a href="#">여름시즌</a>
+                                        <a href="#">빅스마일 데이</a>
+                                        <a href="#">가정의 날</a>
+                                        <a href="#">초보등산러</a>
+                                        <a href="#">첵스초코레인보우</a>
+                                        <a href="#">피크닉기획팩</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang">
+                        <button type="button" class="btn_lang">KR</button>
+                        <ul>
+                            <li>
+                                <a href="#">KR</a>
+                            </li>
+                            <li>
+                                <a href="#">US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <div id="container">
+            <section class="main_slider_wrap">
+                <div class="swiper-container main_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual.jpg" alt="메인베너"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual02 (2).jpg" alt="메인베너"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main_visual03.jpg" alt="메인베너"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev btn_sliderarrow"></div>
+                    <div class="swiper-button-next btn_sliderarrow"></div>
+                </div>
+                <h2 class="blind"></h2>
+            </section>
+            <section class="main_search">
+                <div class="search_inner">
+                    <input id="id" title="타이틀" type="text" placeholder="검색어를 입력하세요">
+                    <button type="button" class="btn_search">검색</button>
+                </div>
+            </section>
+            <section class="main_recommend">
+                <!-- sec01_1 인기레시피 -->
+                <div class="left_recommend">
+                    <h2>이건 어때요?<strong>인기 검색어</strong></h2>
+                    <p>고민을 덜어주는 추천 검색어</p>
+                    <div class="Tag">
+                        <ul>
+
+                            <li><a href=#>#클래식</a></li>
+
+                            <li><a href=#>#초코</a></li>
+
+                            <li><a href=#>#곡물</a></li>
+
+                            <li><a href=#>#프로틴</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_recommend">
+                    <div class="img_wrap">
+                        <img src="images/vi_img.png" alt="시리얼비주얼">
+                    </div>
+                    <div class="txt_wrap">
+                        <h3>리얼 블루베리에 통 아몬드 슬라이스가
+                            더해진 맛과 영양 가득한 그래놀라</h3>
+                    </div>
+                    <div class="product_detail">
+                        <div class="weight">
+                            <span class="title">중량</span>
+                            <div class="inner">
+                                <div>380g</div>
+                            </div>
+                        </div>
+                        <div class="end_date">
+                            <span class="title">유통기한</span>
+                            <div class="inner">
+                                <div>12개월</div>
+                            </div>
+                        </div>
+                        <div class="calory">
+                            <span class="title">열량</span>
+                            <span class="sub_txt">30g당 함량</span>
+                            <div class="inner">
+                                <div>117kcal</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_product_arrow">
+                        <button type="button" class="next">다음</button>
+                    </div>
+                </div>
+            </section>
+            <section class="main_sns_title">
+                <h2 class="sns_tit">
+                    <span>Our Social Channelsa</span>
+                </h2>
+            </section>
+            <section class="main_sns_wrap">
+                <div class="link_wrap_left">
+                    <div class="youtube_link">
+                        <a href="#"><iframe width="690" height="388" src="https://www.youtube.com/embed/9UOatUyiYsI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe></a>
+                    </div>
+                    <div class="youtube_slide">
+                        <div class="youtube_slide_inner">
+                            <div class="tit">
+                                <span>youtube</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="link_wrap_right">
+                    <div class="blog_link">
+                        <a href="#"><img src="images/sns/naver.img.jpg" alt="블로그링크"></a>
+                    </div>
+                    <div class="instargram_link">
+                        <a href="#"><img src="images/sns/ins_img.jpg" alt="인스타그램링크"></a>
+                    </div>
+                    <div class="youtube2_link">
+                        <a href="#"><img src="images/sns/youtube_img.jpg" alt="유튜브링크"></a>
+                    </div>
+                    <div class="crape">
+                        <a href="#"><img src="images/sns/cape.jpg" alt="켐페인"></a>
+                    </div>
+                </div>
+            </section>
+            <section class="main_minibanner_wrap">
+                <h3 class="mini_tit">
+                    <a href="#"><img src="images/key_visual_betterdays_1920.png" alt="better"></a></h3>
+            </section>
+        <footer id="footer">
+        <div class="btn_top">
+            <a href="#">Top</a>
+        </div>
+        <div class="footer_inner clearfix">
+            <div class="footer_logo">
+                <a href="#"><img src="images/logo.png" alt="푸터로고"></a>
+            </div>
+            <div class="footer_txt_wrap">
+                <p>
+                    안성공장 | 17567 경기도 안성시 공단2로 29 (경기도 안성시 신소현동 142번지) <br>
+                    서울본사 | 06235 서울시 강남구 테헤란로 134 15층 (서울 강남구 역삼동 735-3 포스코타워 역삼 15층)
+                </p>
+                <p class="copy">© 2021 KELLOGG Co Ltd ALL RIGHT RESERVED.</p>
+            </div>
+            <div class="footer_right">
+                <div class="footer_sns">
+                    <a href="#"><img src="images/blog.png" alt="블로그"></a>
+                    <a href="#"><img src="images/youtube.png" alt="유튜브"></a>
+                    <a href="#"><img src="images/insta.png" alt="인스타그램"></a>
+                </div>
+                <div class="footer_family">
+                    <button class="btn_family" type="button">Family Site</button>
+                    <ul class="list_family">
+                        <li><a href="#">켈로그가치</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">온라인몰</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js?v=<?php echo time(); ?>"></script>
+</body>
+</html>
